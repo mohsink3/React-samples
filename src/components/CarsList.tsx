@@ -37,14 +37,26 @@ const CarsList = () => {
   return (
     <div>
       <h2 className="text-danger">Cars List</h2>
-      <ul className="list-group">
+      <table className="table table-striped">
+      <tr>
+            <th>ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Price</th>
+          </tr>
+          <tbody>
         {Cars.map((car) => (
-          <li className="list-group-item" key={car.id}>
-            {car.Brand} - {car.Model} <br />
-            {car.Year} -{car.Price}
-          </li>
+          <tr key={car.id}>
+            <td>{car.id}</td>
+              <td>{car.Brand}</td>
+              <td>{car.Model}</td>
+              <td>{car.Year}</td>
+              <td>{car.Price}</td>
+              </tr>
         ))}
-      </ul>
+        </tbody>
+      </table>
     </div>
   );
 };
