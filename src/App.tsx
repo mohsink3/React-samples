@@ -1,6 +1,7 @@
 
 import './App.css'
-import CarsList from './components/CarsList'
+
+import CourseList2 from './components/CourseList2'
 
 function App() {
   
@@ -9,9 +10,9 @@ function App() {
       <header>
       <h1>React Demos</h1>
       </header>
-      <CarsList />
+      <CourseList2 />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
