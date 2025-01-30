@@ -17,7 +17,7 @@ const CourseList2 =()=>{
             id: 3,
             title: "Adv Excel",
             description: "Adv Excel",
-            duration: "32 days",
+            duration: "45 days",
           },
     ];
 
