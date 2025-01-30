@@ -1,5 +1,5 @@
 const LoginStatus = ()=>{
-    const isLoggedIn = true;
+    const isLoggedIn = false;
     return(
         <div>
             <h2 className="text-danger">{isLoggedIn?"welcome,user" :"please login"}</h2>
