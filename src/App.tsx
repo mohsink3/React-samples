@@ -1,7 +1,8 @@
 
 import './App.css'
 
-import CourseList2 from './components/CourseList2'
+
+import LoginStatus from './components/LoginStatus';
 
 function App() {
   
@@ -10,7 +11,7 @@ function App() {
       <header>
       <h1>React Demos</h1>
       </header>
-      <CourseList2 />
+      <LoginStatus />
     </>
   );
 }
