@@ -39,6 +39,6 @@ const ProductList = (props:ProductListprops)=>{
         }
       </div>
     </div>
-    )
-}
+    );
+};
 export default ProductList;

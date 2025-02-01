@@ -1,6 +1,6 @@
 
 import './App.css'
-import CourseList from './components/AdvanceCourse';
+import ProductListprops from "./components/advanceProduct"
 
 
 
@@ -75,7 +75,7 @@ function App() {
       <header>
       <h1>React Demos</h1>
       </header>
-      <ProductListProps productlist={products}/>
+      <ProductListprops productlist={products}/>
     </>
   );
 }
