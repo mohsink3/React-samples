@@ -1,13 +1,14 @@
 
 import './App.css'
-import ProductListprops from "./components/advanceProduct"
+//import ProductListprops from "./components/advanceProduct"
+import CourseListProps from "./components/AdvanceCourse";
 
 
 
 
 
 function App() {
-  let products = [
+  /*let products = [
     {
       id: 1,
       title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -68,6 +69,32 @@ function App() {
         count: 400
       }
     },
+  ];*/
+  let courses = [
+    {
+      id: 1,
+      title: "Advanced Web Design",
+      description: "HTML CSS Bootstrap Responsive Design",
+      duration: "60 days",
+    },
+    {
+      id: 2,
+      title: "React Frontend",
+      description: "JS TS React",
+      duration: "50 days",
+    },
+    {
+      id: 3,
+      title: "Adv Excel",
+      description: "Adv Excel",
+      duration: "30 days",
+    },
+    {
+      id: 4,
+      title: "Python",
+      description: "Python Advanced",
+      duration: "30 days",
+    },
   ];
   
   return (
@@ -75,7 +102,7 @@ function App() {
       <header>
       <h1>React Demos</h1>
       </header>
-      <ProductListprops productlist={products}/>
+      <CourseListProps courseList={courses}/>
     </>
   );
 }
