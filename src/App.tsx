@@ -1,7 +1,8 @@
 
 import './App.css'
 //import Counter from './components/counter';
-import NameInput from './components/nameInput';
+//import NameInput from './components/nameInput';
+import Toggle from './components/Toggle';
 
 //import ProductListprops from "./components/advanceProduct"
 //import CourseListProps from "./components/AdvanceCourse";
@@ -147,7 +148,7 @@ function App() {
       <header>
       <h1>React Demos</h1>
       </header>
-      <NameInput/>
+      <Toggle/>
     </>
   );
 }

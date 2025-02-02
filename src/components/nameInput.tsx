@@ -9,7 +9,7 @@ const NameInput=()=>{
                 type="text"
                 value={name}
                 onChange={(event)=>{
-                    console.log("value enterd in textbox=>"+event?.target.value);
+                    console.log("value enterd in textbox=>"+event.target.value);
                     setName(event.target.value);
                     console.log(event)
                 }}
