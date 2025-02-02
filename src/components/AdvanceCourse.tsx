@@ -1,9 +1,4 @@
-interface Course {
-  id: number;
-  title: string;
-  duration: string;
-  description: string;
-}
+import Course from "../Models/Course"
 
 interface CourseListProps {
   courseList: Course[];
