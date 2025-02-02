@@ -1,15 +1,17 @@
 
 import './App.css'
+import Counter from './components/counter';
+
 //import ProductListprops from "./components/advanceProduct"
 //import CourseListProps from "./components/AdvanceCourse";
-import  CarsListProp from "./components/advanceCars";
+//import  CarsListProp from "./components/advanceCars";
 
 
 
 
 function App() {
 
-  let cars=[
+  /*let cars=[
 
     {
       id: 1,
@@ -144,7 +146,7 @@ function App() {
       <header>
       <h1>React Demos</h1>
       </header>
-      <CarsListProp carslist={cars}/>
+      <Counter/>
     </>
   );
 }
