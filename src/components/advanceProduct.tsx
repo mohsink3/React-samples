@@ -1,11 +1,4 @@
-interface Product{
-    id:number;
-    title:string;
-    price:number;
-    description:string
-    category:string;
-    image:string;
-}
+import Product from "../Models/Product"
 
 interface ProductListprops{
     productlist: Product[];
