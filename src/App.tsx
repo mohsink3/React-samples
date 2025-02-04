@@ -1,5 +1,6 @@
 
 import './App.css'
+import Counter from './components/Counter';
 import Greeting from './components/Greeting';
 //import Counter from './components/counter';
 //import NameInput from './components/nameInput';
@@ -58,13 +59,9 @@ function App() {
       <header>
         <h1>React Demos</h1>
       </header>
-      <Greeting>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure accusamus
-        nemo impedit inventore sed soluta id voluptate accusantium cum dolor?
-        Impedit dolores deleniti deserunt aut reiciendis libero ea minus nisi!
-      </Greeting>
 
-      <UserProfile />
+
+      <Counter />
     </>
   );
 }
