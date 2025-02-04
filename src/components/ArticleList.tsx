@@ -10,8 +10,8 @@ const articles = [
     return(
         <div className="container mt-4">
         <h2 className="mb-3"> Articles</h2>
-        {articles.map((article,title)=>(
-        <Article key={title} title={article.title}>
+        {articles.map((article)=>(
+        <Article key={article.title} title={article.title}>
         {article.body}
         </Article>
         
