@@ -1,5 +1,6 @@
 
 import './App.css'
+import ArticleList from './components/ArticleList';
 import Counter from './components/Counter';
 import Greeting from './components/Greeting';
 //import Counter from './components/counter';
@@ -61,7 +62,7 @@ function App() {
       </header>
 
 
-      <Counter />
+      <ArticleList />
     </>
   );
 }

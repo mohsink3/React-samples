@@ -10,11 +10,16 @@ const articles = [
     return(
         <div className="container mt-4">
         <h2 className="mb-3"> Articles</h2>
-        {Props.articles.map((article,index)=>(
-        <Article key={index} title={article.title}}>
-        {article}
+        {articles.map((article,title)=>(
+        <Article key={title} title={article.title}>
+        {article.body}
+        </Article>
+        
         )
+      )}
+      </div>
             
-            </div>}
-    )
-  }
+            
+    );
+  };
+  export default ArticleList;
