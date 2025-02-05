@@ -21,6 +21,8 @@ function RecipeList(){
     });
 
     return(
+        <div className="p-4">
+      <h2 className="text-2xl font-bold mb-4">Recipe List</h2>
         <ul>
             {recipes.map((recipe)=>(
                 <li key ={recipe.id}>
@@ -29,7 +31,7 @@ function RecipeList(){
             ))}
 
         </ul>
-
+    </div>
     );
 };
 export default RecipeList;
