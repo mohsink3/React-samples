@@ -3,6 +3,8 @@ import './App.css'
 import ArticleList from './components/ArticleList';
 import Counter from './components/Counter';
 import Greeting from './components/Greeting';
+import ProductList from './components/ProductApi';
+import RecipeList from './components/Recipe';
 import UserList from './components/UserList';
 //import Counter from './components/counter';
 //import NameInput from './components/nameInput';
@@ -63,7 +65,7 @@ function App() {
       </header>
 
 
-      <UserList />
+      <RecipeList />
     </>
   );
 }
