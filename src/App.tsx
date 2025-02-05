@@ -3,6 +3,7 @@ import './App.css'
 import ArticleList from './components/ArticleList';
 import Counter from './components/Counter';
 import Greeting from './components/Greeting';
+import UserList from './components/UserList';
 //import Counter from './components/counter';
 //import NameInput from './components/nameInput';
 //import Toggle from './components/Toggle';
@@ -10,8 +11,8 @@ import Greeting from './components/Greeting';
 //import fetchCourse from './Services/CourseServices';
 //import ProductListprops from "./components/advanceProduct"
 //import CourseListProps from "./components/AdvanceCourse";
-import Toggle from './components/Toggle';
-import UserProfile from './components/UserProfileState2';
+//import Toggle from './components/Toggle';
+//import UserProfile from './components/UserProfileState2';
 //import  CarsListProp from "./components/advanceCars";
 
 
@@ -62,7 +63,7 @@ function App() {
       </header>
 
 
-      <ArticleList />
+      <UserList />
     </>
   );
 }
