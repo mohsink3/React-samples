@@ -1,4 +1,4 @@
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
 import ArticleList from './components/ArticleList';
 import Counter from './components/Counter';
@@ -6,6 +6,8 @@ import Greeting from './components/Greeting';
 import ProductList from './components/ProductApi';
 import RecipeList from './components/Recipe';
 import UserList from './components/UserList';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
 //import Counter from './components/counter';
 //import NameInput from './components/nameInput';
 //import Toggle from './components/Toggle';
@@ -59,14 +61,24 @@ function App() {
   ];*/
 
   return (
-    <>
+    <Router>
       <header>
         <h1>React Demos</h1>
       </header>
 
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/about">About Us</Link>
+      </nav>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path="/about" element={<AboutUs />}></Route>
 
-      <RecipeList />
-    </>
+
+      </Routes>
+
+
+    </Router>
+
   );
 }
 
