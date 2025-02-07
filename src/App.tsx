@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router,Routes,Route,Link } from 'react-router-dom';
+=======
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+>>>>>>> a23abe9008d984fe4373320f50d828d25b06e393
 import './App.css'
 import ArticleList from './components/ArticleList';
 import Counter from './components/Counter';
@@ -6,6 +10,8 @@ import Greeting from './components/Greeting';
 //import ProductList from './components/ProductApi';
 import RecipeList from './components/Recipe';
 import UserList from './components/UserList';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
 //import Counter from './components/counter';
 //import NameInput from './components/nameInput';
 //import Toggle from './components/Toggle';
@@ -47,7 +53,20 @@ function App() {
         <Route path="ProductList" element = {<ProductList/>}></Route>
         <Route path="UserList" element = {<UserList/>}></Route>
 
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/about">About Us</Link>
+      </nav>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path="/about" element={<AboutUs />}></Route>
 
+
+      </Routes>
+
+
+    </Router>
+
+<<<<<<< HEAD
 
       </Routes>
 
@@ -55,6 +74,8 @@ function App() {
 
       
     
+=======
+>>>>>>> a23abe9008d984fe4373320f50d828d25b06e393
   );
 }
 

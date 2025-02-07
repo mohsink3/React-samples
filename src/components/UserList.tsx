@@ -20,16 +20,26 @@ function UserList() {
     });
 
     return (
-        <ul>
-            {
-                users.map((user) => (
-                    <li key={user.id}>
-                        {user.name}-{user.email}
-                    </li>
-                ))
-            }
+        <div>
+            <h2 className="text-danger">Cars List</h2>
+            <table className="table table-striped">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
 
-        </ul>
+                </tr>
+                <tbody>
+                    {
+                        users.map((user) => (
+                            <li key={user.id}>
+                                {user.name}-{user.email}
+                            </li>
+                        ))
+                    }
+                </tbody>
+            </table>
+        </div>
     );
 }
 export default UserList;
