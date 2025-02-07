@@ -6,14 +6,14 @@ interface Recipe{
 }
 
 function RecipeList(){
-    const [recipes,setRecipe] = useState<Recipe[]>([]);
+    const [recipes,setRecipes] = useState<Recipe[]>([]);
 
     const fetchRecipe = async () =>{
         const response = await fetch("https://dummyjson.com/recipes");
 
         const data = await response.json();
 
-        setRecipe(data);
+        setRecipes(data.recipes);
     };
 
     useEffect(()=>{
