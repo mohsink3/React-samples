@@ -23,6 +23,7 @@ import CarsList from './components/CarsList';
 import ProductList from './components/ProductApi';
 import PostList from './components/PostList';
 import PostDetails from './components/PostDetails';
+import ProductListSearch from './components/ProductListSearch';
 //import ProductList from './components/ProductApi';
 //import ProductList from './components/advanceProduct';
 
@@ -32,10 +33,12 @@ function App() {
   return (
     <Router>
       <div className="container mt-4">
-        <h1 className="text-center">📝 Blog Posts</h1>
+        <h1 className="text-center">Product list</h1>
         <Routes>
+          <Route path="/" element={<Home/>}></Route>
           <Route path="/" element={<PostList />} />
           <Route path="/posts/:id" element={<PostDetails />} />
+          <Route path="/productsearch" element={<ProductListSearch/>}/>
         </Routes>
       </div>
     </Router>
