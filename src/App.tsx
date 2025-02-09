@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
-import ArticleList from './components/ArticleList';
-import Counter from './components/Counter';
-import Greeting from './components/Greeting';
+//import ArticleList from './components/ArticleList';
+//import Counter from './components/Counter';
+//import Greeting from './components/Greeting';
 //import ProductList from './components/ProductApi';
 import RecipeList from './components/Recipe';
 import UserList from './components/UserList';
@@ -14,16 +14,22 @@ import AboutUs from './components/AboutUs';
 //import fetchProduct  from './Services/ProductServices';
 //import fetchCourse from './Services/CourseServices';
 //import ProductListprops from "./components/advanceProduct"
-import CourseListProps from "./components/AdvanceCourse";
+//import CourseListProps from "./components/AdvanceCourse";
 //import Toggle from './components/Toggle';
 //import UserProfile from './components/UserProfileState2';
 //import  CarsListProp from "./components/advanceCars";
-import CourseList from './components/AdvanceCourse';
-import CarsList from './components/CarsList';
-import ProductList from './components/ProductApi';
+//import CourseList from './components/AdvanceCourse';
+//import CarsList from './components/CarsList';
+//import ProductList from './components/ProductApi';
 import PostList from './components/PostList';
 import PostDetails from './components/PostDetails';
+
 import ProductListSearch from './components/ProductListSearch';
+
+//import ProductList from './components/ProductList4';
+//import ProductDetails from './components/productDetails';
+//import PostListSearch from './components/PostListSearch';
+
 //import ProductList from './components/ProductApi';
 //import ProductList from './components/advanceProduct';
 
@@ -33,6 +39,7 @@ function App() {
   return (
     <Router>
       <div className="container mt-4">
+
         <h1 className="text-center">Product list</h1>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
@@ -40,6 +47,12 @@ function App() {
           <Route path="/posts/:id" element={<PostDetails />} />
           <Route path="/productsearch" element={<ProductListSearch/>}/>
         </Routes>
+        <h1 className="text-center">Post List</h1>
+        <nav>
+
+
+        </nav>
+
       </div>
     </Router>
   );

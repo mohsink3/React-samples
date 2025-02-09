@@ -7,7 +7,7 @@ interface Product {
   images:string;
   
 }
-
+//the demoodss
 function ProductListSearch() {
   const [products, setProducts] = useState<Product[]>([]);
   const [error, setError] = useState<string | null>(null);
