@@ -20,9 +20,12 @@ import CourseListProps from "./components/AdvanceCourse";
 //import  CarsListProp from "./components/advanceCars";
 import CourseList from './components/AdvanceCourse';
 import CarsList from './components/CarsList';
-import ProductList from './components/ProductApi';
+//import ProductList from './components/ProductApi';
 import PostList from './components/PostList';
 import PostDetails from './components/PostDetails';
+import ProductList from './components/ProductList4';
+import ProductDetails from './components/productDetails';
+import PostListSearch from './components/PostListSearch';
 //import ProductList from './components/ProductApi';
 //import ProductList from './components/advanceProduct';
 
@@ -32,10 +35,15 @@ function App() {
   return (
     <Router>
       <div className="container mt-4">
-        <h1 className="text-center">📝 Blog Posts</h1>
+        <h1 className="text-center">Post List</h1>
+        <nav>
+
+
+        </nav>
         <Routes>
-          <Route path="/" element={<PostList />} />
-          <Route path="/posts/:id" element={<PostDetails />} />
+          <Route path="/" element={<PostListSearch />}></Route>
+
+
         </Routes>
       </div>
     </Router>
