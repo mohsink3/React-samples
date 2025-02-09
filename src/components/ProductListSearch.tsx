@@ -3,11 +3,9 @@ import { useState, useEffect } from "react";
 interface Product {
   id:number;
   title: string;
-  Price:number;
-  images:string;
   
 }
-//the demoodss
+
 function ProductListSearch() {
   const [products, setProducts] = useState<Product[]>([]);
   const [error, setError] = useState<string | null>(null);
@@ -20,7 +18,7 @@ function ProductListSearch() {
       setError("Error while fetching list of products")
     } else {
       const data = await response.json();
-      setProducts(data.products);
+      setProducts(data);
     }
   };
 
@@ -50,12 +48,12 @@ function ProductListSearch() {
         {
           filteredProducts.map((product) => (
             <div className="col">
-              <div className="card h-100" key={product.id}>
-                <img src={product.images} className="card-img-top" alt="..." />
+              <div className="card h-100" key={product}>
+                <img src={product.image} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{product.title}</h5>
                   <p className="card-text">{product.Price}</p>
-                 
+                  <p className="card-text">{product.Category}<small className="text-muted">D</small></p>
                 </div>
               </div>
             </div>
