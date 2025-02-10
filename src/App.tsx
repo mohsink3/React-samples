@@ -22,9 +22,11 @@ import AboutUs from './components/AboutUs';
 //import CarsList from './components/CarsList';
 //import ProductList from './components/ProductApi';
 import PostList from './components/PostList';
-import PostDetails from './components/PostDetails';
+//import PostDetails from './components/PostDetails';
 
 import ProductListSearch from './components/ProductListSearch';
+import Courses from './components/Courses';
+import AddCourse from './components/AddCourse';
 
 //import ProductList from './components/ProductList4';
 //import ProductDetails from './components/productDetails';
@@ -44,10 +46,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/" element={<PostList />} />
-          <Route path="/posts/:id" element={<PostDetails />} />
-          <Route path="/productsearch" element={<ProductListSearch/>}/>
+          
+          <Route path="/productListsearch" element={<ProductListSearch/>}/>
+          <Route path = "courselist" element = {<Courses/>}></Route>
+          <Route path = "add-course" element = {<AddCourse/>}></Route>
         </Routes>
-        <h1 className="text-center">Post List</h1>
+      
         <nav>
 
 

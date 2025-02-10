@@ -20,7 +20,7 @@ function ProductListSearch() {
       setError("Error while fetching list of products")
     } else {
       const data = await response.json();
-      setProducts(data);
+      setProducts(data.products);
     }
   };
 
