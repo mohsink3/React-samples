@@ -4,7 +4,7 @@ interface Product {
     id: number;
     title: string;
     images: string;
-    description:string;
+    description: string;
 }
 const ProductDetails = () => {
     const { id } = useParams<{ id: string }>();
@@ -26,15 +26,15 @@ const ProductDetails = () => {
     }, [id]);
 
     if (error) return <p className="text-danger">{error}</p>;
-    if (!ProductDetails) return <p>Loading...</p>
-    return(
+    if (!product) return <p>Loading...</p>
+    return (
         <div className="container mt-4">
             <h2>{product.title}</h2>
             <p>{product.description}</p>
-            
 
 
-            
+
+
             <Link to="/" className="btn btn-primary">
                 ← Back to Posts
             </Link>
