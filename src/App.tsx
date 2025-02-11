@@ -49,7 +49,9 @@ function App() {
 
           <Route path="/productListsearch" element={<ProductListSearch />} />
           <Route path="courselist" element={<Courses />}></Route>
-          <Route path="add-course" element={<AddCourse />}></Route>
+          <Route path="/add-course" element={<AddCourse />}></Route>
+          <Route path="/edit-course/:id" element={< EditCourse/>}></Route>
+
         </Routes>
 
         <nav>

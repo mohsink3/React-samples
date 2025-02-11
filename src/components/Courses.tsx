@@ -53,6 +53,8 @@ function Courses() {
             <th scope="col">Duration</th>
             <th scope="col">Fees</th>
             <th scope="col">Actions</th>
+            <th scope="col">Edit Actions</th>
+
 
           </tr>
         </thead>
@@ -68,6 +70,11 @@ function Courses() {
                 <button className="btn btn-danger"
                   onClick={() => deleteCourse(course.id)}>Delete</button>
               </td>
+              <td>
+                <Link to = {`/edit-course/${course.id}`}>
+                <button>Edit</button>
+                </Link>
+                          </td>
             </tr>
 
           ))}
