@@ -42,16 +42,16 @@ function App() {
     <Router>
       <div className="container mt-4">
 
-        <h1 className="text-center">Product list</h1>
+        <h1 className="text-center">Course list</h1>
         <Routes>
-          <Route path="/" element={<Home/>}></Route>
+          <Route path="/" element={<Home />}></Route>
           <Route path="/" element={<PostList />} />
-          
-          <Route path="/productListsearch" element={<ProductListSearch/>}/>
-          <Route path = "courselist" element = {<Courses/>}></Route>
-          <Route path = "add-course" element = {<AddCourse/>}></Route>
+
+          <Route path="/productListsearch" element={<ProductListSearch />} />
+          <Route path="courselist" element={<Courses />}></Route>
+          <Route path="add-course" element={<AddCourse />}></Route>
         </Routes>
-      
+
         <nav>
 
 

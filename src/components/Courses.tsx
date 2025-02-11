@@ -6,9 +6,9 @@ interface Course {
   id: string;
   title: string;
   description: string;
-  duration: string;   
-  image: string;  
-  fees:number;    
+  duration: string;
+
+  fees: number;
 }
 
 function Courses() {
@@ -19,6 +19,18 @@ function Courses() {
     const data = await response.json();
     setCourses(data);
   };
+  const deleteCourse = async (id: string) => {
+    const request = {
+      method: "DELETE",
+    };
+
+    const response = await fetch(`${API_URL}/${id}`, request);
+    const data = response.json();
+    console.log(data);
+
+    const updatedCourses = courses.filter((course) => course.id != id);
+    setCourses(updatedCourses);
+  }
 
   useEffect(() => {
     fetchCourses();
@@ -38,9 +50,10 @@ function Courses() {
             <th>Id</th>
             <th>Title</th>
             <th>Description</th>
-            <th scope="col">Duration</th>  
-      <th scope="col">Fees</th>
-      <th scope="col">Image</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Fees</th>
+            <th scope="col">Actions</th>
+
           </tr>
         </thead>
         <tbody>
@@ -49,10 +62,14 @@ function Courses() {
               <th>{course.id}</th>
               <td>{course.title}</td>
               <td>{course.description}</td>
-              <td>{course.duration}</td>  
-                <td>{course.fees}</td>  
+              <td>{course.duration}</td>
+              <td>{course.fees}</td>
+              <td>
+                <button className="btn btn-danger"
+                  onClick={() => deleteCourse(course.id)}>Delete</button>
+              </td>
             </tr>
-           
+
           ))}
         </tbody>
       </table>
