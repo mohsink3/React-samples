@@ -27,6 +27,7 @@ import PostList from './components/PostList';
 import ProductListSearch from './components/ProductListSearch';
 import Courses from './components/Courses';
 import AddCourse from './components/AddCourse';
+import EditCourse from './components/EditCourse';
 
 //import ProductList from './components/ProductList4';
 //import ProductDetails from './components/productDetails';
