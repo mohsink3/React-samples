@@ -2,6 +2,7 @@ import  { useState } from "react";
 
 const AddCar = () =>{
     const api_url = "https://67a97e126e9548e44fc3c722.mockapi.io/Cars";
+    const[id,setId] = useState("");
 
     const[brand,setBrand] = useState("");
     const[model,setModel] = useState("");

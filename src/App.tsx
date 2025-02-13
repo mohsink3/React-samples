@@ -27,12 +27,12 @@ import PostList from './components/PostList';
 import ProductListSearch from './components/ProductListSearch';
 import Courses from './components/Courses';
 import AddCourse from './components/AddCourse';
-<<<<<<< HEAD
+
 import Cars from './components/Cars';
 import AddCar from './components/AddCar';
-=======
+
 import EditCourse from './components/EditCourse';
->>>>>>> b4ff911078ab24973566e4602a8b8a680550ed71
+
 
 //import ProductList from './components/ProductList4';
 //import ProductDetails from './components/productDetails';
