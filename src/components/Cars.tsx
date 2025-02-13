@@ -16,6 +16,18 @@ function Cars(){
         const data = await response.json();
         setCars(data);
     };
+
+    const deleteCourse = async (id: string) => {
+        const request = {
+          method: "DELETE",
+        };
+        const response = await fetch(`${api_url}/${id}`, request);
+        const data = await response.json();
+        console.log(data);
+    
+        const updatedCourses = cars.filter((car) => car.id != id);
+        setCars(updatedCourses);
+      };
     useEffect(()=>{
         fetchCars();
     })
@@ -33,6 +45,7 @@ function Cars(){
                     <th scope="col">brand</th>
                     <th scope="col">model</th>
                     <th scope="col">price</th>
+                    <th scope="col">Actions</th>
 
                 </tr>
             </thead>
@@ -43,6 +56,14 @@ function Cars(){
                         <td>{car.brand}</td>
                         <td>{car.model}</td>
                         <td>{car.price}</td>
+                        <td>
+                        <button
+                        className="btn btn-danger"
+                        onClick={() => deleteCourse(course.id)}>
+               
+                  🗑️ Delete
+                </button>
+                        </td>
 
                     </tr>
                 ))}    
