@@ -53,7 +53,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/" element={<PostList />} />
 
-          <Route path="/productListsearch" element={<ProductListSearch />}></Route>
+          <Route path="/productListsearch" element={<ProductListSearch />}/>
           <Route path="/courselist" element={<Courses />}></Route>
           <Route path="/add-course" element={<AddCourse />}></Route>
           <Route path="/add-car" element={<AddCar/>}></Route>
