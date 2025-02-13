@@ -78,9 +78,6 @@ const AddCourse = () => {
 
   return (
     <div>
-
-
-
       <h2>Add Course</h2>
       <form className="border p-3 shadow-lg rounded" onSubmit={handleSubmit}>
         <div>
@@ -99,7 +96,7 @@ const AddCourse = () => {
               placeholder="Enter Course Title"
               onChange={(e) => setTitle(e.target.value)}
             />
-            
+
           </div>
         </div>
         <div>
