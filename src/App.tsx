@@ -27,6 +27,8 @@ import PostList from './components/PostList';
 import ProductListSearch from './components/ProductListSearch';
 import Courses from './components/Courses';
 import AddCourse from './components/AddCourse';
+import Cars from './components/Cars';
+import AddCar from './components/AddCar';
 
 //import ProductList from './components/ProductList4';
 //import ProductDetails from './components/productDetails';
@@ -47,10 +49,15 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/" element={<PostList />} />
 
-          <Route path="/productListsearch" element={<ProductListSearch />} />
-          <Route path="courselist" element={<Courses />}></Route>
+          <Route path="/productListsearch" element={<ProductListSearch />}></Route>
+          <Route path="/courselist" element={<Courses />}></Route>
           <Route path="/add-course" element={<AddCourse />}></Route>
-          <Route path="/edit-course/:id" element={< EditCourse/>}></Route>
+          <Route path="/add-car" element={<AddCar/>}></Route>
+
+          
+          <Route path="/cars" element={<Cars />}></Route>
+
+          
 
         </Routes>
 
